@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MultiShopSite.DAL;
+
 namespace MultiShopSite
 {
     public class Program
@@ -6,6 +9,10 @@ namespace MultiShopSite
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDbContext>(opt =>
+            {
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSQL"));
+            });
             var app = builder.Build();
             
             app.UseStaticFiles();

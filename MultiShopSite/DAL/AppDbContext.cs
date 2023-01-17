@@ -9,16 +9,15 @@ namespace MultiShopSite.DAL
         {
 
         }
-        //DbSet<Product> Products { get; set; }
-        //DbSet<Addvertising> Addvertisings { get; set; }
-        //DbSet<Category> Categories { get; set; }
-        //DbSet<Color> Colors { get; set; }
-        //DbSet<Discount> Discounts { get; set; }
-        //DbSet<ProductCategory> ProductCategories { get; set; }
-        //DbSet<ProductImage> ProductImages { get; set; }
-        //DbSet<ProductInformation> ProductInformations { get; set; }
-        //DbSet<Setting> Settings { get; set; }
-        //DbSet<Size> Sizes { get; set; }
-        //DbSet<Slider> Sliders { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Addvertising> Addvertisings { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<ProductInformation> ProductInformations { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
     }
 }
