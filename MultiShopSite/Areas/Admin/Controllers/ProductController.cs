@@ -21,6 +21,7 @@ namespace MultiShopSite.Areas.Admin.Controllers
         }
         public IActionResult Create() 
         { 
+
             return View();
         }
         public IActionResult Delete() 
